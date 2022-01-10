@@ -1,0 +1,44 @@
+
+root{
+
+    --azulPrussia: #003049;
+    --azulSemiOscuro: #074f68;
+    --azulClaro: #24a7bc;
+    --azulALternativo: #176c82;
+    --naranja: #f77f00;
+    --naranjaYema: #fcbf49;
+    --amarillo: #f9dc4b;
+    --beige: #eae2b7;
+    --blanco: #ffffff;
+
+}
+
+
+.fondoGris{
+
+background-color: rgb(184, 181, 181);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.paginaMostrar{
+
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px #999;
+    margin: auto, auto, auto, auto;
+    height: 30vmax;
+    width: 65rem;
+    padding: 50px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    position: relative;
+}
+
+.paginaMostrarB{
+
+    background-color: whitesmoke;
+
+}

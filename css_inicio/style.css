@@ -1,0 +1,698 @@
+:root{
+    /*paleta de colores proyecto*/
+    --azulPrussia: #003049;
+    --azulSemiOscuro: #074f68;
+    --azulClaro: #24a7bc;
+    --azulALternativo: #176c82;
+    --naranja: #f77f00;
+    --naranjaYema: #fcbf49;
+    --amarillo: #f9dc4b;
+    --beige: #eae2b7;
+    --blanco: #ffffff;
+    --negro: black;
+    }
+    
+    html{
+    
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #666;
+        background: #f2f2f2; 
+        font-size: 1em;
+        line-height: 1.5em;
+        
+        padding-top: 80px;
+    }
+    h1{
+        font-size: 2.3em;
+        line-height: 1.3em;
+        margin: 15px 0;
+        text-align: center;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+    footer{
+        text-align: center;
+    }
+    
+    
+    
+    #main-header-inicio {
+        /*background: var(--azulPrussia);*/
+        background-image: url(/proyecto_basketcase/img/inicio/back.jpg); /*esto es nuevo*/
+        color: var(--blanco);
+        height: 565px; /*estp se cambio de 65px a 565px*/
+        width: 100%; 
+        left: 0;
+        top: 0; 
+        padding: 0px 0px 20px 0px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* nuevo*/
+        z-index: 30;
+    
+    }
+    
+    /*esto es nuevo*/
+    
+    a
+    {
+        z-index: 40;
+    }
+    
+    #img-inicio{
+        /*display:block;*/
+        /*margin-left: auto;
+         margin-right: auto;*/
+    
+        /*float: ;*/
+        width: 300px;
+        height: 300px;
+        position: fixed; 
+        padding: 6% 0  0; 
+        margin: 0 0 0 40% ;
+        z-index: 35;
+    }
+    
+    
+    #nav-alineacion-inicio
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 40;
+    }
+    
+    .nav-menu li ul {
+        display: none;
+        position: absolute;
+        padding-top: 0;
+        z-index: 40;
+    }
+    
+    .nav-menu li ul a{
+        font-size: 1rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        z-index: 40;
+    }
+    
+    
+    .nav-menu li{
+        text-align: center;
+        z-index: 40;
+    }
+    
+    .nav-menu li:hover > ul{
+        
+        display: block;
+        justify-items:center ;
+        z-index: 40;
+    }
+    
+    
+    /*pa los colores*/
+    #a-menu {
+        background-color: transparent;
+        color: var(--blanco);
+        width: 150px;
+        display: block;
+        z-index: 40;
+    }
+    
+     #a-menu:hover{
+         background-color: white;
+         color: black;
+         
+     }
+    
+     /*imagen del logo*/
+     #logo-inicio
+     {
+        width: 300px;
+        height: 250px;
+        padding-top: 5%;
+     }
+    
+    /*lo de arriba es nuevo*/
+    
+    /*esto es lo nuevo para el menu
+    #dimension-imagen-menu{
+        background-image: url(/img/back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 128px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    #contenido-imagen-menu{
+        position:absolute;
+        background-color: var(--blueUnicah);
+    }
+    lo de arriba es nuevo*/
+    
+    .main_menu{
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+    .main_menu a{
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: block;
+        margin: 0px;
+        padding: 30px;
+        list-style: none;
+        padding-right: 20px;
+    }
+    .main_menu ul{
+        color: var(--whiteUnicah);
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        margin: 0px;
+        padding: 1px;
+        list-style: none;
+        padding-right: 20px;
+    }
+    
+    #a {
+        background-color: var(--azulPrussia);
+        color: var(--blanco);
+        width: 150px;
+        display: block;
+            
+    }
+    
+     #a:hover{
+         background-color: var(--blanco);
+         color: var(--negro);
+     }
+
+     #az {
+      background-color: transparent;
+      color: var(--blanco);
+      width: 150px;
+      display: block;
+      height: 20px;	
+      padding-top: 10%;
+      padding-bottom: 10%;
+      margin-left: -1%;
+  
+    }
+  
+     #az:hover{
+        background-color: var(--blanco);
+        color: var(--negro);
+    }
+
+    .nav li ul {
+        display: none;
+        position: absolute;
+        padding-top: 0;
+    }
+    
+    .nav li ul a{
+        font-size: 1rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .nav li{
+        text-align: center;
+    }
+    
+    .nav li:hover > ul{
+        display: block;
+    }
+    
+    
+    .main_menu a:hover{
+     background: var(--azulClaro);
+    }
+    
+    .dimension-imagen-pan
+    {
+        background-image: url(../img/banner_pan2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 128px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .dimension-imagen{
+        background-image: url(../img/vaquitaGG.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 128px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .contenido-imagen{
+        position:absolute;
+        background-color: var(--blueUnicah);
+    }
+    
+    
+    .main-content {
+        background: var(--blanco);
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px var(--negro);
+    }
+    
+    .main-content section{
+        padding: 5px;
+        
+    }
+    
+    .productos{
+        background: var(--blanco);
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px var(--negro);
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        /*flex-flow:row wrap;*/
+        justify-content:left;
+        align-content:space-between;
+        text-align: left;
+        align-items: center;	
+    }
+    
+    .productos img{
+        width: 100px;
+        height: 100px;
+        padding: 10px 10px 10px 20px;
+    }
+    
+    .productos a{
+        font-size: 20px;
+        color: var(--azulSemiOscuro);
+        padding-left: 150px;
+        text-decoration: none;
+        text-align: left;
+        width: 300px;
+    
+    }
+    
+    .productos a:hover {
+        color: var(--naranja);
+    }
+    
+    .productos p{
+        justify-content: left;
+        padding-left: 2rem ; 
+    }
+    
+    
+    .productos h2{
+        font-size: 20px;
+        color: var(--azulSemiOscuro);
+        padding-right: 0px;
+        text-decoration: none;
+        text-align: right;
+        width: 350px;
+    }
+    
+    .main-footer {
+        background:var(--azulPrussia);
+        color: var(--blanco);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+
+    /*slider*/
+    /*Sección del Slider*/
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    animation: cambio 20s infinite; 
+}
+
+.slides input{
+    display: none;
+}
+
+.image{
+    width: 20%;
+    transition: 2s;
+}
+
+.image img{
+    width: 800px;
+    height: 500px;
+}
+
+.manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--azulClaro);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: var(--azulALternativo);
+}
+
+#radio1:checked ~ .primero{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primero{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .primero{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .primero{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .primero{
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .primero{
+    margin-left: -100%;
+}
+
+#radio7:checked ~ .primero{
+    margin-left: -120%;
+}
+
+#radio8:checked ~ .primero{
+    margin-left: -140%;
+}
+
+#radio9:checked ~ .primero{
+    margin-left: -160%;
+}
+
+
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+    100%{margin-left: -400%;}
+    120%{margin-left: -400%;}
+
+    125%{margin-left: -500%;}
+    145%{margin-left: -500%;}
+
+    150%{margin-left: -600%;}
+    170%{margin-left: -600%;}
+
+    175%{margin-left: -700%;}
+    195%{margin-left: -700%;}
+
+    200%{margin-left: -800%;}
+    220%{margin-left: -800%;}
+}
+
+@media screen and (max-width:800px)
+{
+    /*main header para el div superior*/
+    #main-header-inicio {
+
+        /*background: var(--azulPrussia);*/
+        background-image: url(/proyecto_basketcase/img/inicio/back.jpg); /*esto es nuevo*/
+        color: var(--blanco);
+        height: 100%; /*estp se cambio de 65px a 565px*/
+        width: 100%;  
+        /*left: 0;*/
+        /*top: 0; */
+        /*padding: 0px 0px 20px 0px;*/
+        position:fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* nuevo*/
+        z-index: 30;
+    }
+
+
+    /*pal menu osea el nav*/
+    .main_menu{
+        display:flex;
+        justify-content:left;
+        flex-direction: row;
+        padding-bottom: 0px;
+        width: auto;
+    }
+    .main_menu a{   
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 1.4rem;
+        display: block;
+        margin: 0px;
+        /*padding: 30px;*/
+        padding-top: 10%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        /*padding: 10% 0 0.5% 0 ;*/ /*para mover botones y acomodarlos y tal*/
+        list-style: none;
+        padding-right: 20px;
+    }
+    .main_menu ul{
+        color: var(--whiteUnicah);
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        margin: 0px;
+        padding: 1px;
+        list-style: none;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    /*para los ul*/
+    #nav-alineacion-inicio
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 40;
+    }
+    
+    .nav-menu li ul {
+        display: none;
+        position: absolute;
+        padding-top: 0;
+        z-index: 40;
+    }
+    
+    .nav-menu li ul a{
+        font-size: 1rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        z-index: 40;
+    }
+    
+    
+    .nav-menu li{
+        text-align: center;
+        z-index: 40;
+    }
+    
+    .nav-menu li:hover > ul{
+        
+        display: block;
+        justify-items:center ;
+        z-index: 40;
+    }
+
+    /*para los a principales*/
+    #a-menu {
+        background-color: transparent;
+        color: var(--blanco);
+        width: 4.7em; /*150px estaba*/
+        display: block;
+        z-index: 40;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+     #a-menu:hover{
+         background-color: white;
+         color: black;       
+     }
+     
+     /*para listas de categoria*/
+     #az {
+        background-color: transparent;
+        color: var(--blanco);
+        width: 124px;
+        display: block;
+        height: 20px;	
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: -30%;
+        padding-right: 0;
+    
+      }
+    
+       #az:hover{
+          background-color: var(--blanco);
+          color: var(--negro);
+      }
+
+      /*para el logo*/
+      #img-inicio{
+        /*display:block;*/
+        /*margin-left: auto;
+         margin-right: auto;*/
+    
+        /*float: ;*/
+        width: 300px;
+        height: 300px;
+        position: fixed; 
+        padding: 20% 0  0; 
+        margin: 0 0 0 5% ;z-index: 35;
+        src: url(/proyecto_basketcase/a.png);
+    }
+
+    .slider
+    {
+        visibility: hidden;
+    }
+
+    .main-content
+    {
+        visibility: hidden;
+        height: 100%;
+    }
+
+    body
+    {
+        overflow-x:hidden;
+        overflow-y:hidden;
+        background-color: var(--azulPrussia);
+    }
+}
+
+
+/*
+    @media screen and (max-width:800px ) {
+
+      #a-menu{
+        padding: 2em;
+        margin: -5.8em auto -1em -2.6em; 
+        width: 10em;
+        height: 5em;
+        font-size: 12pt;
+      };
+  
+      /* esto esta bueno
+      #a{
+        margin: -5.5em auto -1em -2.5em; 
+        width: 9.7em;
+        height: 5em;
+        font-size: 13pt;
+      };
+        
+      
+      
+      .main-header nav {
+        width:100%;
+        height:100%;
+        left:-100%;
+        margin:0;
+        position:relative;
+      }
+  
+      
+        .main-header nav ul li {
+          display:block;
+          float:none;
+          border-bottom:1px solid rgba(255,255,255, .3);
+        }
+  
+      
+        .main_menu {
+          padding-bottom: 10%;
+          display:block;
+          width:100%;
+          background:#ccc;
+        }
+  
+        #az {
+        background-color: var(--azulPrussia);
+        color: var(--blanco);
+        width: 150px;
+        display: block;
+        height: 65px;	
+        padding-top: 13%;
+        margin-left: -30%;
+      }
+  
+        /*
+      
+        .main_menu .bt-menu {
+          display:block;
+          padding:20px;
+          background:#024959;
+          color:#fff;
+          text-decoration:none;
+          font-weight: bold;
+          font-size:25px;
+          -webkit-box-sizing:border-box;
+          -moz-box-sizing:border-box;
+          box-sizing:border-box;
+        }
+      
+        .main_menu span {
+          float:right;
+          font-size:40px;
+        }
+      }
+      */
